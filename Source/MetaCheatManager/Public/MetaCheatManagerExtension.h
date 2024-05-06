@@ -31,7 +31,7 @@ public:
 protected:
 	/** Contains all cheat commands exposed by this cheat manager.
 	 * Is automatically saved into config file while in editor to have these commands available in builds where is no access to meta data. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Config, meta = (BlueprintProtected))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CheatManager", Config, meta = (BlueprintProtected))
 	TArray<FMetaCheatCommand> AllCheatCommands;
 
 	/** Is overridden to initialize all cheat commands on startup. */
